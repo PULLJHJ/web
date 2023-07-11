@@ -31,6 +31,7 @@ while(rs.next()){
 	out.println("<td>" + rs.getString("CI_NAME") + "</td>");
 	out.println("<td>" + rs.getString("CI_DESC") + "</td>");
 	out.println("</tr>");
+
 }
 %>
 	<tr>

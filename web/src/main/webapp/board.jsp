@@ -27,12 +27,14 @@ ResultSet rs = stmt.executeQuery(sql);
 	</tr>
 <%
 while(rs.next()){
-	out.println("<tr>");
-	out.println("<td>" + rs.getInt("BI_NUM") + "</td>");
-	out.println("<td>" + rs.getString("BI_TITLE") + "</td>");
-	out.println("<td>" + rs.getString("BI_WRITER") + "</td>");
-	out.println("<td>" + rs.getString("BI_CNT") + "</td>");
-	out.println("</tr>");
+%>
+	<%="<tr>"%>
+	<%="<td>" + rs.getInt("BI_NUM") + "</td>" %>
+	<%="<td>" + rs.getString("BI_TITLE") + "</td>" %>
+	<%="<td>" + rs.getString("BI_WRITER") + "</td>" %>
+	<%="<td>" + rs.getString("BI_CNT") + "</td>" %>
+	<%="</tr>"%>
+<%
 }
 %>
 	<tr>
