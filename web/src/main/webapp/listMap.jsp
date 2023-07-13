@@ -42,7 +42,6 @@ int min = points.get(0);
 String maxName = "";
 String maxAddr = "";
 
-List<String> confirm = new ArrayList<>();
 for(int i=0; i<points.size(); i++){
 	if(max<points.get(i)){
 		max = points.get(i);

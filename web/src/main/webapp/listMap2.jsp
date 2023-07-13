@@ -44,11 +44,11 @@ map.put("point","54");
 map.put("addr","광주");
 list.add(map);
 
-Map<String,String> minMap = list.get(0);
+Map<String,String> minMap = list.get(0);   // 여기서 minmap을 선언
 Map<String,String> maxMap = list.get(0);
 
 for(int i=1;i<list.size();i++){
-	Map<String,String> tmpMap = list.get(i);
+	Map<String,String> tmpMap = list.get(i); 
 	if(Integer.parseInt(minMap.get("point"))>Integer.parseInt(tmpMap.get("point"))){
 		minMap = tmpMap;
 	}
