@@ -24,7 +24,6 @@ sql += " BI_CONTENT=?,";
 sql += " BI_WRITER=?";
 sql += " WHERE BI_NUM=?";
 
-
 PreparedStatement patmt = con.prepareStatement(sql);
 patmt.setString(1,biTitle);
 patmt.setString(2,biContent);
